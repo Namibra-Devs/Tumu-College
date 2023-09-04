@@ -1,3 +1,20 @@
+window.addEventListener("load", () => {
+  const sidebar = document.querySelector(".sidebar"),
+  closeBtn = document.querySelector(".sidebar_toggle .fa-bars");
+
+closeBtn.addEventListener("click", () => {
+sidebar.classList.toggle("open");
+btnChange();
+  
+})
+btnChange = () => {
+  if(sidebar.classList.contains("open")) {
+   closeBtn.classList.replace("fa-bars", "fa-bars-staggered");
+  } else {
+    closeBtn.classList.replace("fa-bars-staggered", "fa-bars");
+  }
+}
+})
 
 const openNavMenu = document.querySelector(".open-nav-menu"),
       closeNavMenu = document.querySelector(".close-nav-menu"),
@@ -62,3 +79,4 @@ const openNavMenu = document.querySelector(".open-nav-menu"),
         navbar2.classList.remove("fixed-nav");
     }
 })
+
