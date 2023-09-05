@@ -838,6 +838,7 @@ font-size: 1.2rem;
 .dashboard-profile  {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem 0;
     padding-bottom: 1.5rem;
@@ -919,6 +920,121 @@ table {
   /* .fa-remove {
     color: red;
   } */
+  .form-instruction {
+    margin-bottom: 1.5rem;
+  }
+  .form-instruction * {
+    margin-bottom: 1.0rem;
+  }
+  .bioDataForm form * {
+    margin-bottom: .8rem;
+  } 
+ 
+ .bioDataForm form {
+    width: 65vw;
+  }
+  .bioDataForm form input {
+   width: 31vw;
+   min-width: 18rem;
+   border: 1px solid #25166F;
+   padding: .6rem;
+   border-radius: 5px;
+  }
+  .bioDataForm form input:focus {
+    border: 1px solid #25166F;  
+  }
+  .bioDataForm .personal-title, .form-group div {
+    display: grid;
+  }
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-between;
+  }
+  .submit-form button {
+    width: 31vw;
+    min-width: 18rem;
+  }
+  .search-students {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem .5rem 1rem 0;
+  }
+  .search-students .search-bar input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../images/search.png);
+    background-position: 10px 10px; 
+    background-size: 1.4rem;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  .search-students .search-bar input[type=text]:focus {
+    width: 100%;
+  }
+  .courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.0rem;
+  }
+  .courses .course {
+    background-color: #F4D96C;
+    padding: 1rem;
+    border-radius: 5px;
+    color: black;
+  }
+  .department-course {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 11rem;
+  }
+  .student-population {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  .student-population p {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 3px;
+  }
+  .upload {
+    display: flex;
+    justify-content: left;
+  }
+  .upload-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEBF9;
+    padding: 1.7rem;
+    border-radius: 5px;
+  }
+  .upload-container button {
+    text-align: center;
+    padding: .5rem;
+    border: none;
+    background-color: #3C24B5;
+    color: #fff;
+    border-radius: 3px;
+  }
 /*============================= MEDIA QUERIES ====================*/
 @media (max-width:1200px) {
     .about-img {
@@ -963,6 +1079,18 @@ table {
         overflow-x: auto;
         
     }
+    .bioDataForm form {
+        width: 55vw;
+      }
+      .bioDataForm form input {
+        width: 25vw;
+        min-width: 18rem;
+        
+       }
+       .submit-form button {
+        width: 25vw;
+        min-width: 18rem;
+      }
 }
 
 /*================== width:768px =============================*/
@@ -1100,6 +1228,17 @@ table {
         overflow-x: visible;
         
     }
+    .bioDataForm form {
+        width: 55vw;
+      }
+      .bioDataForm form input, .submit-form button {
+        width: 25vw;
+        min-width: 18rem;
+        
+       }
+       .search-students .search-bar input[type=text] {
+        width: 100px; 
+       }
 }
 /*================== width:600px =============================*/
 @media (max-width:600px) { 
@@ -1127,8 +1266,34 @@ table {
     overflow-x: visible;
     
 }
+.bioDataForm form {
+    width: 50vw;
+  }
+  .bioDataForm form input, .submit-form button {
+    width: 22vw;
+    min-width: 17rem;
+    
+   }
 }
-
+@media (max-width:480px)  { 
+    .bioDataForm form {
+        width: 50vw;
+      }
+      .bioDataForm form input, .submit-form button {
+        width: 20vw;
+        min-width: 15rem;
+        
+       }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .profile-text h2 {
+        font-size: 1.3rem; 
+    }
+    .search-students .search-bar input[type=text] {
+        width: 90px; 
+       }
+}
 /*================== width:300px =============================*/
 @media (max-width:280px)  {
     .navbar_1 {
@@ -1158,4 +1323,12 @@ table {
     .event-info button {
        margin-left: 5px;
     }
+    .bioDataForm form {
+        width: 50vw;
+      }
+      .bioDataForm form input, .submit-form button {
+        width: 19vw;
+        min-width: 13rem;
+        
+       }
 }
