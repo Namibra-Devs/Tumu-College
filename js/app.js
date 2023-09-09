@@ -63,7 +63,7 @@ const openNavMenu = document.querySelector(".open-nav-menu"),
       // *****************FIXED NAV***************
 
      const navbar = document.querySelector(".navbar_2");
-     const navbar2 = document.querySelector(".menu-bar");
+     const menuBar = document.querySelector(".menu-bar");
     //  const navbarColor = document.querySelector(".navbar_List .list_item  a");
 
       window.addEventListener("scroll", () => {
@@ -72,11 +72,11 @@ const openNavMenu = document.querySelector(".open-nav-menu"),
 
     if(scrollHeight > 100 ) {
         navbar.classList.add("fixed-nav");
-        navbar2.classList.add("fixed-nav");
+        menuBar.classList.add("fixed-nav");
      
     } else {
         navbar.classList.remove("fixed-nav");
-        navbar2.classList.remove("fixed-nav");
+        menuBar.classList.remove("fixed-nav");
     }
 })
 
