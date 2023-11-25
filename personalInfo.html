@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../font-awesome-6/css/all.min.css">
-<link rel="stylesheet" href="../css/style.css">
-<title>Tumu College of Education</title>
+<link rel="stylesheet" href="font-awesome-6/css/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<title>Premier Nursing College</title>
 </head>
 <body>
     <nav class="navbar_1 ">
         <div class="logo">
-            <a href="index.html">
-                <img src="../images/tumu-logo.jpg" alt="">
+            <a href="index.html" style="color: gray; font-weight: 800;">
+                Premier Nursing College
             </a>
         </div>
-        <div class="portal">
-            <a href="../studentPortal.html">Student Portal</a>
-            <a href="../lecturersDashboard/lecturerLogin.html">Staff Portal</a>
+        <div class="portal" style="display: flex; align-items: center;">
+            <div class="portal-picture">
+                <img src="./images/Frame 3293.png" alt="">
+            </div>
+            <div class="portal-text">
+                <p>Awal Adebisi <i class="fa fa-angle-down"></i></p>
+            </div>
         </div>
     </nav>
     <div class="dashboard">
@@ -31,37 +36,20 @@
         <ul class="sidebar-list">
           <li>
             <a href="StudentDashboard.html">
-                <img class="active-li" src="../images/home.png" alt="">
+                <img src="./images/home.png" alt="">
                 <span class="link_name">Dashboard</span>
             </a>
          </li>
           <li class="active-sidebar-list">
-            <a href="studentBiodata.html" class="active-li">
-                <img class="active-li" src="../images/record.png" alt="">
-                <span class="link_name">Student Biodata</span>
+            <a href="lecturerDashboard.html" class="active-li">
+                <img class="active-li" src="./images/record.png" alt="">
+                <span class="link_name">Student's Biodata</span>
             </a>
          </li>
-         <li>
-            <a href="courses.html">
-                <img src="../images/diary.png" alt="">
-                <span class="link_name">Course Registration</span>
-            </a>
-         </li>
-          <li>
-            <a href="feesHistory.html">
-                <img src="../images/invoice.png" alt="">
-                <span class="link_name">Fees History</span>
-            </a>
-         </li>
-          <li>
-            <a href="studentResult.html">
-                <img src="../images/result.png" alt="">
-                <span class="link_name">Result Checking</span>
-            </a>
-         </li>
+
          <div class="logout">
-            <a href="../studentPortal.html">
-                <img src="../images/Logout.png" alt="">
+            <a href="studentSignup.html">
+                <img src="./images/Logout.png" alt="">
                 <span> Logout</span>
             </a>
         </div>
@@ -70,7 +58,13 @@
         
     </div>
     <div class="myDashboard">
-        <h1 style="margin-bottom: 1.5rem;">My Biodata</h1>
+       <div class="personalInfoMenuLinks">
+        <a href="personalInfo.html" class="activePersonalLink">Biodata</a>
+        <a href="examinationHistory.html">Examination History</a>
+        <a href="#">Choice of Programme</a>
+        <a href="#">Uploads</a>
+        <a href="#">Summary</a>
+       </div>
       <div class="bioDataForm">
         <div class="form-instruction">
         <h3>Personal Information</h3>
@@ -197,13 +191,13 @@
                </div>
             </div>
             <div class="submit-form">
-                <button type="submit">Update Information</button>
+                <button type="submit"><a href="examinationHistory.html">Save and Continue</a></button>
             </div>
         </form>
       </div>
     </div>
 </div>
  
-    <script src="../js/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
